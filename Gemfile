@@ -32,3 +32,20 @@ group :development, :test do
   gem 'pry-rescue'
   gem 'rubocop'
 end
+group :development, :test do
+  gem "brakeman", :require => false
+  gem "rspec-rails", ">= 2.12.2"
+  gem 'cucumber-rails', :require => false
+  gem "shoulda"
+  gem "factory_girl_rails", ">= 4.2.0"
+  gem 'faker'
+  gem "database_cleaner", ">= 1.0.0.RC1"
+  gem "email_spec", ">= 1.4.0"
+  gem "capybara", ">= 2.0.3"
+  gem "shoulda-matchers"
+  gem 'simplecov', require: false
+  gem 'selenium-webdriver'
+  gem 'selenium'
+  gem 'headless'
+  gem 'rspec-core'
+end
